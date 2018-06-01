@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282512BA20C210DE00B24822 /* libisJB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 282512B920C210DE00B24822 /* libisJB.a */; };
+		282512BB20C210DE00B24822 /* libisJB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 282512B920C210DE00B24822 /* libisJB.a */; };
 		828ADF5720A4860800E935F3 /* PlistStorageExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 828ADF5520A4860800E935F3 /* PlistStorageExerciseViewController.xib */; };
 		828ADF5820A4860800E935F3 /* PlistStorageExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828ADF5620A4860800E935F3 /* PlistStorageExerciseViewController.swift */; };
 		828ADF5A20A48B6000E935F3 /* Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 828ADF5920A48B5F00E935F3 /* Credentials.plist */; };
@@ -124,6 +126,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		282512B820C210C800B24822 /* isJB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isJB.h; sourceTree = "<group>"; };
+		282512B920C210DE00B24822 /* libisJB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libisJB.a; sourceTree = "<group>"; };
 		828ADF5520A4860800E935F3 /* PlistStorageExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistStorageExerciseViewController.xib; sourceTree = "<group>"; };
 		828ADF5620A4860800E935F3 /* PlistStorageExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistStorageExerciseViewController.swift; sourceTree = "<group>"; };
 		828ADF5920A48B5F00E935F3 /* Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Credentials.plist; sourceTree = "<group>"; };
@@ -249,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25B4F892095CC890065171C /* libsqlite3.tbd in Frameworks */,
+				282512BA20C210DE00B24822 /* libisJB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +261,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				282512BB20C210DE00B24822 /* libisJB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +300,8 @@
 		A238A975207897A2006C042F /* iGoat-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				282512B820C210C800B24822 /* isJB.h */,
+				282512B920C210DE00B24822 /* libisJB.a */,
 				A23E63D920961C26005683A9 /* maxpower.c */,
 				A23E63D820961C26005683A9 /* maxpower.h */,
 				A25B4F682094AD640065171C /* iGoat-Objc-Bridging-Header.h */,
@@ -1133,6 +1141,10 @@
 				INFOPLIST_FILE = "iGoat-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iGoat-Swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iGoat-Objc-Bridging-Header.h";
@@ -1150,6 +1162,10 @@
 				INFOPLIST_FILE = "iGoat-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iGoat-Swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iGoat-Objc-Bridging-Header.h";
@@ -1166,6 +1182,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iGoat-SwiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iGoat-Swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1182,6 +1202,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iGoat-SwiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iGoat-Swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "OWASP.iGoat-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
